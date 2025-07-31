@@ -405,22 +405,28 @@ html::selection {
 }
 
 .work__title {
+
 	color: rgb(34, 31, 32);
 	font-size: 40px;
 	font-weight: 400;
 	line-height: 48px;
 	letter-spacing: 0%;
-	width: max-content;
-	margin: 0 auto;
-	justify-items: end;
+	text-align: center;
+	;
 
-	&::after {
+	span {
+		position: relative;
+	}
+
+	span::after {
 		content: "";
 		display: block;
 		width: 75px;
 		height: 2px;
 		background-color: black;
-
+		position: absolute;
+		bottom: 0;
+		right: 0;
 	}
 
 	@media screen and (max-width:768px) {
